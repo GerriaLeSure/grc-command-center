@@ -157,10 +157,10 @@ async def get_key_performance_indicators(db: Session = Depends(get_db)):
     ).count()
     control_implementation_rate = (implemented_controls / max(total_controls, 1)) * 100
     
-    automated_controls = db.query(Control).filter(
-        Control.automation_level >= 80
+    orchestrated_controls = db.query(Control).filter(
+        Control.system_orchestration_level >= 80
     ).count()
-    automation_rate = (automated_controls / max(total_controls, 1)) * 100
+    orchestration_rate = (orchestrated_controls / max(total_controls, 1)) * 100
     
     # Vendor KPIs
     active_vendors = db.query(Vendor).filter(Vendor.status == VendorStatus.ACTIVE).count()
@@ -196,7 +196,7 @@ async def get_key_performance_indicators(db: Session = Depends(get_db)):
         },
         "control_metrics": {
             "implementation_rate": round(control_implementation_rate, 2),
-            "automation_rate": round(automation_rate, 2),
+            "orchestration_rate": round(orchestration_rate, 2),
             "total_controls": total_controls,
             "implemented_controls": implemented_controls
         },

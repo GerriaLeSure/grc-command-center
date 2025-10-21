@@ -57,7 +57,7 @@ class Control(Base):
     
     # Effectiveness
     effectiveness_rating = Column(Integer)  # 1-5 scale
-    automation_level = Column(Integer)  # 0-100%
+    system_orchestration_level = Column(Integer)  # 0-100%
     
     # Metadata
     created_at = Column(DateTime, default=datetime.utcnow)

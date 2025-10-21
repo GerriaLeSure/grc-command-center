@@ -124,7 +124,7 @@ export default function ControlLibrary() {
               <TableCell>Status</TableCell>
               <TableCell>Owner</TableCell>
               <TableCell>Effectiveness</TableCell>
-              <TableCell>Automation</TableCell>
+              <TableCell>Orchestration</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -147,7 +147,7 @@ export default function ControlLibrary() {
                   {control.effectiveness_rating ? `${control.effectiveness_rating}/5` : 'N/A'}
                 </TableCell>
                 <TableCell>
-                  {control.automation_level !== null ? `${control.automation_level}%` : 'N/A'}
+                  {control.system_orchestration_level !== null ? `${control.system_orchestration_level}%` : 'N/A'}
                 </TableCell>
               </TableRow>
             ))}

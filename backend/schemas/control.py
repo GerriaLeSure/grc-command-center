@@ -26,7 +26,7 @@ class ControlUpdate(BaseModel):
     implementation_description: Optional[str] = None
     owner: Optional[str] = None
     effectiveness_rating: Optional[int] = None
-    automation_level: Optional[int] = None
+    system_orchestration_level: Optional[int] = None
 
 
 class ControlResponse(ControlBase):
@@ -34,7 +34,7 @@ class ControlResponse(ControlBase):
     control_id: str
     status: ControlStatus
     effectiveness_rating: Optional[int]
-    automation_level: Optional[int]
+    system_orchestration_level: Optional[int]
     created_at: datetime
     updated_at: datetime
     

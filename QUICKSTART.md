@@ -44,7 +44,7 @@ Open your browser and visit:
 1. Go to **Control Library**
 2. Controls are mapped to SOC2, NIST, and ISO frameworks
 3. Track control implementation status
-4. Monitor automation levels
+4. Monitor system orchestration levels
 
 ### 4. Check Compliance Status
 1. Visit **Compliance Dashboard**
@@ -131,7 +131,7 @@ SERVICENOW_PASSWORD=your_password
 
 ### Control Effectiveness
 - Control implementation rate
-- Automation percentage
+- System orchestration percentage
 - Controls needing testing
 - Framework coverage
 
@@ -244,7 +244,7 @@ curl http://localhost:8000/api/dashboard/metrics/kpis | json_pp
 ## 🎓 Best Practices
 
 1. **Regular Updates**: Update risk and control status weekly
-2. **Evidence Collection**: Automate where possible
+2. **Evidence Collection**: Streamline where possible
 3. **Vendor Assessments**: Schedule recurring assessments
 4. **Compliance Tracking**: Review dashboards daily
 5. **Documentation**: Keep descriptions detailed
@@ -265,7 +265,7 @@ By using this GRC Command Center:
 - ✅ **84% reduction** in audit preparation time (3 months → 2 weeks)
 - ✅ **500+ vendor assessments** managed annually
 - ✅ **Real-time compliance** monitoring
-- ✅ **Automated evidence** collection
+- ✅ **Streamlined evidence** collection
 - ✅ **Integrated risk management** across the organization
 
 ---

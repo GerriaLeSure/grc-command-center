@@ -258,7 +258,7 @@ export default function RiskRegister() {
               label={{ value: 'Impact', angle: -90, position: 'left' }}
             />
             <ZAxis type="number" dataKey="z" range={[100, 1000]} name="Count" />
-            <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+            <Tooltip crosshair={{ strokeDasharray: '3 3' }} />
             <Scatter data={heatmapData}>
               {heatmapData.map((entry: any, index: number) => (
                 <Cell key={`cell-${index}`} fill={HEATMAP_COLORS[entry.level] || '#999'} />

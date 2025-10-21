@@ -200,7 +200,7 @@ export default function Dashboard() {
                   Implementation Rate: {kpis?.control_metrics?.implementation_rate?.toFixed(2)}%
                 </Typography>
                 <Typography variant="body2">
-                  Automation Rate: {kpis?.control_metrics?.automation_rate?.toFixed(2)}%
+                  Orchestration Rate: {kpis?.control_metrics?.orchestration_rate?.toFixed(2)}%
                 </Typography>
                 <Typography variant="body2">
                   Total Controls: {kpis?.control_metrics?.total_controls || 0}

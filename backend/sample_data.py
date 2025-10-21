@@ -2,6 +2,8 @@
 """
 Sample Data Generator for GRC Command Center
 This script populates the database with sample data for demonstration
+
+Developed and documented by Gerria LeSure.
 """
 
 import sys
@@ -126,7 +128,7 @@ def create_sample_controls(db: Session):
             "owner": "Security Team",
             "implementation_description": "MFA enforced via SSO provider for all applications",
             "effectiveness_rating": 5,
-            "automation_level": 95
+            "system_orchestration_level": 95
         },
         {
             "control_id": "AC-002",
@@ -135,9 +137,9 @@ def create_sample_controls(db: Session):
             "control_type": ControlType.DETECTIVE,
             "status": ControlStatus.IMPLEMENTED,
             "owner": "IT Operations",
-            "implementation_description": "Automated quarterly access review workflow",
+            "implementation_description": "Streamlined quarterly access review workflow",
             "effectiveness_rating": 4,
-            "automation_level": 70
+            "system_orchestration_level": 70
         },
         {
             "control_id": "LOG-001",
@@ -148,7 +150,7 @@ def create_sample_controls(db: Session):
             "owner": "Security Operations",
             "implementation_description": "Centralized SIEM solution collecting all logs",
             "effectiveness_rating": 5,
-            "automation_level": 100
+            "system_orchestration_level": 100
         },
         {
             "control_id": "ENC-001",
@@ -159,7 +161,7 @@ def create_sample_controls(db: Session):
             "owner": "Data Security Team",
             "implementation_description": "AES-256 encryption for all databases and storage",
             "effectiveness_rating": 5,
-            "automation_level": 100
+            "system_orchestration_level": 100
         },
         {
             "control_id": "BC-001",
@@ -168,9 +170,9 @@ def create_sample_controls(db: Session):
             "control_type": ControlType.CORRECTIVE,
             "status": ControlStatus.PARTIALLY_IMPLEMENTED,
             "owner": "Infrastructure Team",
-            "implementation_description": "Daily automated backups, quarterly recovery tests",
+            "implementation_description": "Daily streamlined backups, quarterly recovery tests",
             "effectiveness_rating": 3,
-            "automation_level": 80
+            "system_orchestration_level": 80
         }
     ]
     
